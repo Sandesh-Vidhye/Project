@@ -1,7 +1,17 @@
 <% layout ('layouts/boilerplate') -%>
 
 <body>
-  <h3>Listings deatils :</h3>
+  <h3>Listing deatils :</h3>
+
+  <div class="card">
+    <img src="<%=listing.image.url%>" 
+      class="card-img-top show-img" 
+      alt="listing image"/>
+    <div class="card-body">
+      <p class="card-text"> <%= listing.title %></p>
+    </div>
+  </div>
+
   <ul>
     <li><%= listing.title %></li>
     <li><%= listing.description %></li>
